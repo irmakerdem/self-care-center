@@ -55,6 +55,7 @@ h1 {
 .clear-message {
   height: 3vh;
   width: 7vw;
+  margin-top: 2%;
 }
 
 .clear-message:hover {
@@ -95,6 +96,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 15px;
   margin-bottom: 10%;

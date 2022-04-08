@@ -8,9 +8,11 @@ var buddhaImage = document.querySelector('.buddha-img');
 var messageResult = document.querySelector('.full-message');
 var choiceAffirmation = document.querySelector('#affirmation');
 var choiceMantra = document.querySelector('#mantra');
+var clearMessageButton = document.querySelector('.clear-message');
 
 //EVENT LISTENERS
 receiveMessageButton.addEventListener('click', viewMessage);
+clearMessageButton.addEventListener('click', clearMessage);
 
 //FUNCTIONS
 function getRandomElement(array) {
@@ -39,12 +41,13 @@ function viewMessage() {
   selectChoice();
   hide(buddhaImage);
   show(messageResult);
+  show(clearMessageButton);
+};
+
+function clearMessage() {
+  hide(messageResult);
+  show(buddhaImage);
+  hide(clearMessageButton);
 };
 
 //ONLY be able to click receive if radio is selected
-
-//add CLEAR button
-
-//click CLEAR button
-//hide message
-//show buddha
