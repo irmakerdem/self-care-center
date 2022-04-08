@@ -33,21 +33,29 @@ function selectChoice() {
 	} else if (choiceMantra.checked) {
 		messageResult.innerText = `${getRandomElement(mantras)}`;
 	};
-  // console.log(messageResult);
-  // console.log("you selected something!");
 };
 
+// function selectChoice(option) {
+// 		messageResult.innerText = `${getRandomElement(affirmations)}`;
+// };
+
 function viewMessage() {
-  selectChoice();
-  hide(buddhaImage);
-  show(messageResult);
-  show(clearMessageButton);
+  if(choiceAffirmation.checked || choiceMantra.checked) {
+    selectChoice();
+    hide(buddhaImage);
+    show(messageResult);
+    show(clearMessageButton);
+  } else {
+    alert("Please select 1 of 2 options!")
+  }
 };
 
 function clearMessage() {
   hide(messageResult);
   show(buddhaImage);
   hide(clearMessageButton);
+  choiceAffirmation.checked = false;
+  choiceMantra.checked = false;
 };
 
-//ONLY be able to click receive if radio is selected
+//delete "This is a message" place holder
