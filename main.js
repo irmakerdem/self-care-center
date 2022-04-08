@@ -8,9 +8,11 @@ var buddhaImage = document.querySelector('.buddha-img');
 var messageResult = document.querySelector('.full-message');
 var choiceAffirmation = document.querySelector('#affirmation');
 var choiceMantra = document.querySelector('#mantra');
+var clearMessageButton = document.querySelector('.clear-message');
 
 //EVENT LISTENERS
 receiveMessageButton.addEventListener('click', viewMessage);
+clearMessageButton.addEventListener('click', clearMessage);
 
 //FUNCTIONS
 function getRandomElement(array) {
@@ -31,12 +33,23 @@ function selectChoice() {
 	} else if (choiceMantra.checked) {
 		messageResult.innerText = `${getRandomElement(mantras)}`;
 	};
-  // console.log(messageResult);
-  // console.log("you selected something!");
 };
 
 function viewMessage() {
-  selectChoice();
-  hide(buddhaImage);
-  show(messageResult);
+  if(choiceAffirmation.checked || choiceMantra.checked) {
+    selectChoice();
+    hide(buddhaImage);
+    show(messageResult);
+    show(clearMessageButton);
+  } else {
+    alert("Please select 1 of 2 options!");
+  };
+};
+
+function clearMessage() {
+  hide(messageResult);
+  show(buddhaImage);
+  hide(clearMessageButton);
+  choiceAffirmation.checked = false;
+  choiceMantra.checked = false;
 };
