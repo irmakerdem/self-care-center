@@ -1,24 +1,45 @@
 # Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Set Up](#set-up)
+- [Deployment Link](#deployment-link)
+- [Features](#features)
+- [Future Features](#future-features)
+- [Contributors](#contributors)
+- [Project Specifications](#project-specifications)
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+### Introduction
+Looking for random affirmations or mantras to give you a confidence boost throughout the day? You can with this site that let's you choose which one you need! 🧘‍♀️
 
-## Learning Goals
+### Technologies
+- JavaScript
+- HTML
+- CSS
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+### Set Up
+1.  Clone this [repository](https://github.com/irmakerdem/self-care-center).
+2. `cd` into the directory.
+3. Run `open index.html`.
 
-## Setup
+### Deployment Link
+- Simply go to: https://irmakerdem.github.io/self-care-center/
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+### Features
+- User can selected 2 types of messages and view a randomly selected message
+- User can see an alert if message type is not chosen
+- User can clear the message
 
+![self care center gif](https://media.giphy.com/media/5XhtzFfsKd6vLhuFWy/giphy.gif)
+
+### Future Features
+- User can add their own message
+- User can favorite a message
+- User can see unique messages (no duplicates)
+
+### Contributors
+- [Irmak Erdem](https://github.com/irmakerdem)
+
+### Project Specifications
+- Project specs can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html).
