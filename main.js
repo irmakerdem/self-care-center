@@ -4,7 +4,11 @@ var affirmations = ['I forgive myself and set myself free.', 'I believe I can be
 var mantras = ['Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.', 'Don’t let yesterday take up too much of today.', 'Every day is a second chance.', 'Tell the truth and love everyone.', 'I am free from sadness.', 'I am enough.', 'In the beginning it is you, in the middle it is you and in the end it is you.', 'I love myself.', 'I am present now.', 'Inhale the future, exhale the past.', 'This too shall pass.', 'Yesterday is not today.', 'The only constant is change.', 'Onward and upward.', 'I am the sky, the rest is weather.'];
 
 //QUERY SELECTORS
-var receiveMessageButton = document.querySelector(".receive-message");
+var receiveMessageButton = document.querySelector('.receive-message');
+var buddhaImage = document.querySelector('.buddha-img');
+var messageResult = document.querySelector('.full-message');
+var choiceAffirmation = document.querySelector('#affirmation');
+var choiceMantra = document.querySelector('#mantra');
 
 //EVENT LISTENERS
 receiveMessageButton.addEventListener('click', viewMessage);
@@ -22,7 +26,21 @@ function hide(element) {
   element.classList.add('hidden');
 };
 
+function selectChoice() {
+	if (choiceAffirmation.checked) {
+		messageResult.innerText = `${getRandomElement(affirmations)}`;
+	} else if (choiceMantra.checked) {
+		messageResult.innerText = `${getRandomElement(mantras)}`;
+	}
+  console.log(messageResult);
+  console.log("you selected something!");
+};
 
+function viewMessage() {
+  selectChoice();
+  hide(buddhaImage);
+  show(messageResult);
+};
 
 //select an option
 //click button
