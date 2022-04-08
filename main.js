@@ -40,3 +40,11 @@ function viewMessage() {
   hide(buddhaImage);
   show(messageResult);
 };
+
+//ONLY be able to click receive if radio is selected
+
+//add CLEAR button
+
+//click CLEAR button
+//hide message
+//show buddha
