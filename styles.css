@@ -36,7 +36,7 @@ h1 {
   justify-content: center;
 }
 
-.receive-message {
+.receive-message, .clear-message {
   background-color: #134d71;
   color: #ffffff;
   height: 3vh;
@@ -49,6 +49,15 @@ h1 {
 }
 
 .receive-message:hover {
+  color: #BADA55;
+}
+
+.clear-message {
+  height: 3vh;
+  width: 7vw;
+}
+
+.clear-message:hover {
   color: #BADA55;
 }
 
