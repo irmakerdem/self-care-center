@@ -35,10 +35,6 @@ function selectChoice() {
 	};
 };
 
-// function selectChoice(option) {
-// 		messageResult.innerText = `${getRandomElement(affirmations)}`;
-// };
-
 function viewMessage() {
   if(choiceAffirmation.checked || choiceMantra.checked) {
     selectChoice();
@@ -46,8 +42,8 @@ function viewMessage() {
     show(messageResult);
     show(clearMessageButton);
   } else {
-    alert("Please select 1 of 2 options!")
-  }
+    alert("Please select 1 of 2 options!");
+  };
 };
 
 function clearMessage() {
@@ -57,5 +53,3 @@ function clearMessage() {
   choiceAffirmation.checked = false;
   choiceMantra.checked = false;
 };
-
-//delete "This is a message" place holder
