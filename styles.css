@@ -45,6 +45,11 @@ h1 {
   border-radius: 5px;
   border: none;
   font-size: 0.9rem;
+  cursor:pointer;
+}
+
+.receive-message:hover {
+  color: #BADA55;
 }
 
 img {
