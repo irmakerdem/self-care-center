@@ -24,7 +24,7 @@ Looking for random affirmations or mantras to give you a confidence boost throug
 3. Run `open index.html`.
 
 ### Deployment Link
-- Simply go to: https://irmakerdem.github.io/self-care-center/
+- Simply go to: https://irmakerdem.github.io/self_care_center/
 
 ### Features
 - User can selected 2 types of messages and view a randomly selected message
